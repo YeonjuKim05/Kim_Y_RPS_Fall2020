@@ -1,4 +1,4 @@
-from gameComponents import gameVars
+from gameComponents import gameVars, winOrLose
 
 
 
@@ -13,10 +13,11 @@ def winorlose(status):
 		exit()
 
 	elif choice == "Yes" or choice == "yes":
+		# reset the player lives and the AI lives
+		# and set player to False so that our loop will restart
 
-
-		gameVars.player_lives = 1
-		gameVars.ai_lives = 1
+		gameVars.player_lives = 5
+		gameVars.ai_lives = 5
 		gameVars.player = False
 
 

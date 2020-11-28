@@ -31,6 +31,10 @@ while gameVars.player is False:
 	# validate that the random choice worked for the AI
 	print("AI chose: " + computer)
 
+
+
+	#--------------------------- MOVE THIS CHUNK OF CODE TO A PACKAGE - START HERE --------------------
+
 	if (computer == gameVars.player):
 		print("tie")
 
@@ -64,7 +68,7 @@ while gameVars.player is False:
 
 
 
-		#--------- stop here - all of the above needs to move ----------
+		#--------------------------- stop here - all of the above needs to move -----------------------
 
 	if gameVars.player_lives is 0:
 		chooseWinner.winorlose("lost")
